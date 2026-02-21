@@ -34,21 +34,14 @@ A professional Full-Stack management solution designed for modern HR workflows. 
 
 ---
 
-### 📸 Preview (Screenshots)
-> *Tip: Add your project screenshots in a `screenshots/` folder and link them here*
 
-<p align="center">
-  <img src="https://via.placeholder.com/800x450.png?text=Dashboard+Main+View" width="800" alt="Dashboard Preview">
-</p>
-
----
 
 ### 🚀 Getting Started
 
 #### 1. Backend Setup (API)
 ```bash
 # Clone the repository
-git clone https://github.com/Huzaifa-mh/Backend.git
+git clone https://github.com/Huzaifa-mh/EMployee-Backend.git
 
 # Navigate to project
 cd Backend
