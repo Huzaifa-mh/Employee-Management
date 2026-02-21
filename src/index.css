@@ -1,0 +1,136 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+@theme {
+  --font-ubuntu: "Ubuntu", sans-serif;
+}
+
+@layer base {
+  body {
+    background: whitesmoke;
+  }
+}
+@layer components {
+  .icon-hover {
+    @apply absolute top-8 opacity-0 group-hover:opacity-100 text-[#6366F1] text-sm transition-all;
+  }
+  .nav-icons {
+    color: #CBD5E1;
+    font-size: 24px; /* Adjust size as needed */
+    position: relative;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .home-container {
+    margin-top: 0px;
+    margin-left: 50px;
+    height: 100%; /* Full height of the parent */
+    padding: 0; /* Remove padding to allow precise positioning */
+    position: relative; /* Allows absolute positioning of the card */
+  }
+  
+  .card {
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    border-radius: 12px;
+    padding: 20px 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2),
+                0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: absolute; /* Fixes card to a specific location */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3),
+                0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-icon-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 10px; /* Space between icons and heading */
+  }
+  
+  .card-icon {
+    font-size: 24px;
+    color: #6366F1; /* Matches the hover color for consistency */
+    transition: transform 0.3s ease;
+  }
+  
+  .card-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect on icon hover */
+  }
+  
+  .card-heading {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1E293B;
+    letter-spacing: 0.5px;
+  }
+  .Toastify__close-button {
+    color: white !important;
+    opacity: 1 !important;
+  }
+  
+  .Toastify__close-button:hover {
+    color: #d1d5db !important;
+  }
+
+  /* From Uiverse.io by joe-watson-sbf */ 
+.btn {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #1E293B;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #12398e;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #13a2c5;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+}
