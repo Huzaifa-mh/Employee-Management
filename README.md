@@ -69,12 +69,5 @@ This project implements enterprise-standard security:
 Authentication: AddJwtBearer middleware validates tokens on every request.
 Authorization: Custom [Authorize(Roles = "Admin")] attributes protect sensitive endpoints.
 Data Integrity: AutoMapper and DTOs ensure internal database models are never exposed directly to the client.
-🤝 Contact & Links
-Muhammad Huzaifa
-![alt text](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)
-
-![alt text](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
-
-![alt text](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)
 <p align="center">Built with ❤️ using the .NET Ecosystem</p>
 ```
