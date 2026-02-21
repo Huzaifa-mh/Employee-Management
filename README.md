@@ -9,7 +9,7 @@
 
 A professional Full-Stack management solution designed for modern HR workflows. This application provides a secure, role-based environment to manage organizational data with a focus on performance and data integrity.
 
-[Explore API Docs](#) · [Report Bug](https://github.com/Huzaifa-mh/Backend/issues) · [Request Feature](https://github.com/Huzaifa-mh/Backend/issues)
+[Backend: (https://github.com/Huzaifa-mh/Employee-Backend)]
 
 ---
 
