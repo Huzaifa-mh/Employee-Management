@@ -1,12 +1,87 @@
-# React + Vite
+# 📊 Employee Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://img.shields.io/badge/.NET%20Core-5C2D91?style=for-the-badge&logo=.net&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
+  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white" />
+</p>
 
-Currently, two official plugins are available:
+A professional Full-Stack management solution designed for modern HR workflows. This application provides a secure, role-based environment to manage organizational data with a focus on performance and data integrity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Explore API Docs](#) · [Report Bug](https://github.com/Huzaifa-mh/Backend/issues) · [Request Feature](https://github.com/Huzaifa-mh/Backend/issues)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🌟 Key Highlights
+
+*   **Secure Authentication:** Multi-layered security using **JWT Bearer Tokens** and password hashing.
+*   **Role-Based Access (RBAC):** Granular permissions for Admins (Full Control) and Employees (Read-Only/Limited).
+*   **Optimized Data Mapping:** Clean database interactions using **Entity Framework Core** and the **DTO Pattern** to prevent data over-posting.
+*   **Modern UI/UX:** A responsive dashboard built with **React** and **Tailwind CSS** featuring real-time data updates.
+
+---
+
+### 🛠️ Technical Stack
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend** | React.js, Tailwind CSS, Axios, Lucide Icons |
+| **Backend** | ASP.NET Core Web API, C# |
+| **Database** | SQL Server (SSMS), EF Core |
+| **Security** | JWT (JSON Web Tokens), CORS Policy |
+| **Dev Tools** | Postman, Swagger UI, Git |
+
+---
+
+### 📸 Preview (Screenshots)
+> *Tip: Add your project screenshots in a `screenshots/` folder and link them here*
+
+<p align="center">
+  <img src="https://via.placeholder.com/800x450.png?text=Dashboard+Main+View" width="800" alt="Dashboard Preview">
+</p>
+
+---
+
+### 🚀 Getting Started
+
+#### 1. Backend Setup (API)
+```bash
+# Clone the repository
+git clone https://github.com/Huzaifa-mh/Backend.git
+
+# Navigate to project
+cd Backend
+
+# Update ConnectionString in appsettings.json
+# Then run migrations
+dotnet ef database update
+
+# Run the API
+dotnet run
+2. Frontend Setup (UI)
+code
+Bash
+# Navigate to frontend folder
+cd client-app
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+```
+🔒 Core Security Implementation
+This project implements enterprise-standard security:
+Authentication: AddJwtBearer middleware validates tokens on every request.
+Authorization: Custom [Authorize(Roles = "Admin")] attributes protect sensitive endpoints.
+Data Integrity: AutoMapper and DTOs ensure internal database models are never exposed directly to the client.
+🤝 Contact & Links
+Muhammad Huzaifa
+![alt text](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)
+
+![alt text](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+
+![alt text](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)
+<p align="center">Built with ❤️ using the .NET Ecosystem</p>
+```
